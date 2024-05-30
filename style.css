@@ -1,0 +1,96 @@
+body{
+    width: 80vw;
+    margin: auto;
+}
+h1{
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+}
+.prechod:hover {
+    background-color: rgb(0, 167, 0);
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease;
+    transition: background-color 2s ease;
+
+}
+.prechod {
+    width: 100px;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+.prechody {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(-80px);
+}
+.animace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.animace_1 {
+    text-align: center;
+    animation:animace_1 6s infinite;
+}
+@keyframes animace_1 {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: green;}
+    75% {background-color: blue;}
+    100% {background-color: red;}
+  }
+.animace_2 {
+    background-color: aqua;
+    text-align: center;
+    animation:animace_2 9s infinite;
+    margin: auto;
+}
+@keyframes animace_2 {
+    0% {width: 100%;}
+    50% {width: 30%;}
+    100% {width: 100%;}
+  }
+.animace_3 {
+    width: 150px;
+    background-color: chocolate;
+    text-align: center;
+    animation:animace_3 6s infinite;
+    position: relative;
+}
+@keyframes animace_3 {
+    0% {left: 0px;}
+    50% {left: 1390px;}
+    100%{left: 0px;}
+  }
+.transformace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.transformace_1{
+    background-color: yellow;
+    text-align: center;
+    transform: rotate(-180deg);
+}
+.transformace_2{
+    background-color: rgb(99, 205, 117);
+    text-align: center;
+    transform: rotateX(180deg);
+}
+.transformace_3 {
+    text-align: center;
+    background-color: aquamarine;
+    width: 300px;
+    margin: auto;
+    transition: 2s ease-out;
+}
+.transformace_3:hover {
+    transform: scaleX(2);
+}
+.margin{
+    margin-top: 20px;
+}
